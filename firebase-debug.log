@@ -1,0 +1,75 @@
+[debug] [2024-06-11T08:00:22.676Z] ----------------------------------------------------------------------
+[debug] [2024-06-11T08:00:22.678Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-11T08:00:22.679Z] CLI Version:   13.10.0
+[debug] [2024-06-11T08:00:22.679Z] Platform:      win32
+[debug] [2024-06-11T08:00:22.679Z] Node Version:  v18.19.1
+[debug] [2024-06-11T08:00:22.680Z] Time:          Tue Jun 11 2024 17:00:22 GMT+0900 (Japan Standard Time)
+[debug] [2024-06-11T08:00:22.680Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-11T08:00:22.686Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-11T08:00:22.687Z] > authorizing via signed-in user (spiderdev999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\workspace\SOLANA\STL_frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-06-11T08:01:02.277Z] > refreshing access token with scopes: []
+[debug] [2024-06-11T08:01:02.280Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-06-11T08:01:02.280Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-11T08:01:03.297Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-06-11T08:01:03.297Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-06-11T08:01:03.417Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-06-11T08:01:03.418Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"stl_frontend","name":"stl_frontend"}
+[debug] [2024-06-11T08:01:06.054Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-06-11T08:01:06.055Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-06-11T08:01:06.945Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\YCI\AppData\Roaming\nvm\v18.19.1\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\YCI\AppData\Roaming\nvm\v18.19.1\node_modules\firebase-tools\lib\apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-06-11T08:01:15.553Z] ----------------------------------------------------------------------
+[debug] [2024-06-11T08:01:15.555Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-06-11T08:01:15.556Z] CLI Version:   13.10.0
+[debug] [2024-06-11T08:01:15.556Z] Platform:      win32
+[debug] [2024-06-11T08:01:15.556Z] Node Version:  v18.19.1
+[debug] [2024-06-11T08:01:15.557Z] Time:          Tue Jun 11 2024 17:01:15 GMT+0900 (Japan Standard Time)
+[debug] [2024-06-11T08:01:15.557Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-06-11T08:01:15.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-06-11T08:01:15.563Z] > authorizing via signed-in user (spiderdev999@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\workspace\SOLANA\STL_frontend
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-06-11T08:01:37.491Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-06-11T08:01:38.983Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-06-11T08:01:38.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
